@@ -49,8 +49,8 @@ def main_ui_panel(is_depth_tab):
                 with gr.Group(visible=False) as options_depend_on_boost:
                     inp += 'match_size', gr.Checkbox(label="Match net size to input size", value=False)
             with gr.Row(visible=False) as options_depend_on_match_size:
-                inp += 'net_width', gr.Slider(minimum=64, maximum=2048, step=64, label='Net width', value=512)
-                inp += 'net_height', gr.Slider(minimum=64, maximum=2048, step=64, label='Net height', value=512)
+                inp += 'net_width', gr.Slider(minimum=64, maximum=2048, step=64, label='Net width', value=448)
+                inp += 'net_height', gr.Slider(minimum=64, maximum=2048, step=64, label='Net height', value=448)
 
         with gr.Group():
             with gr.Row():
